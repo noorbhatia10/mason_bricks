@@ -7,7 +7,6 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:{{project_name}}/navigator_key/nav_key.dart';
-import 'package:{{project_name}}/views/work/view/home_page.dart';
 
 class LocalNotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
@@ -39,16 +38,16 @@ class LocalNotificationService {
           } else if (assistanceId != null) {
             Prefs.newAssistanceRequest = true;
           }
-          final homePage = HomePage(
-            taskId: taskId == null ? null : taskId as String,
-            assistanceId: assistanceId == null ? null : assistanceId as String,
-          );
-          await NavKey().navKey.currentState!.pushReplacement<void, void>(
-                RouteAnimationSlideFromRight(
-                  widget: homePage,
-                  shouldMaintainState: false,
-                ),
-              );
+          // final homePage = HomePage(
+          //   taskId: taskId == null ? null : taskId as String,
+          //   assistanceId: assistanceId == null ? null : assistanceId as String,
+          // );
+          // await NavKey().navKey.currentState!.pushReplacement<void, void>(
+          //       RouteAnimationSlideFromRight(
+          //         widget: homePage,
+          //         shouldMaintainState: false,
+          //       ),
+          //     );
         }
       },
     );

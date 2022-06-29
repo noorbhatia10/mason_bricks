@@ -1,5 +1,4 @@
 import 'package:api_controller/api_controller.dart';
-import 'package:feature_flags/feature_flags.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';

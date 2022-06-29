@@ -1,7 +1,7 @@
-import 'package:api_controller/api_controller.dart';
 import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:{{project_name}}/navigator_key/nav_key.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);

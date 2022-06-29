@@ -219,7 +219,7 @@ class OverlayDropDownState<T> extends State<OverlayDropDown<T>> {
             widget.selectedTrailingWidget ??
                 Transform.rotate(
                   angle: 1.571,
-                  child: SvgPicture.asset(icNextArrow),
+                  child: SvgPicture.asset('icNextArrow'),
                 )
           ],
         ),

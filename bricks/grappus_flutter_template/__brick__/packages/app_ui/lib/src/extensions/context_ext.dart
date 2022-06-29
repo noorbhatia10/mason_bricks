@@ -43,7 +43,7 @@ extension ContextExt on BuildContext {
         showCustomMobileToast(
           message.orEmpty,
           bgColor: AppColors.redAccent,
-          toastIcon: icErrorToastMobile,
+          toastIcon: 'icErrorToastMobile',
         );
       } else {
         showCustomTabletToast(
@@ -59,7 +59,7 @@ extension ContextExt on BuildContext {
           message.orEmpty,
           bgColor: Colors.red,
           time: time,
-          toastIcon: icErrorToastMobile,
+          toastIcon: 'icErrorToastMobile',
         );
       } else {
         showCustomTabletToast(
@@ -77,7 +77,7 @@ extension ContextExt on BuildContext {
     String message, {
     Color bgColor = Colors.green,
     Duration time = const Duration(seconds: 3),
-    String toastIcon = icSuccessToastMobile,
+    String toastIcon = 'icSuccessToastMobile',
   }) {
     if (_toastTimer == null || !_toastTimer!.isActive) {
       _overlayEntry =
@@ -148,7 +148,7 @@ extension ContextExt on BuildContext {
     Color bgColor = AppColors.lightGreen,
     Color borderColor = AppColors.mintGreen,
     Duration time = const Duration(seconds: 3),
-    String toastIcon = icSuccessToastTablet,
+    String toastIcon = 'icSuccessToastTablet',
   }) {
     if (_toastTimer == null || !_toastTimer!.isActive) {
       _overlayEntry = createTabletOverlayEntry(
